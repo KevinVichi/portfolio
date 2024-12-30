@@ -4,6 +4,7 @@ import Music from "./components/Music/music";
 import Menu from "./components/Menu/menu";
 import Name from "./components/Name/name";
 import Profile from "./components/Profile/profile";
+import Skills from "./components/Skills/skills"; // Añade esta línea
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Menu />
       <Name />
       <Profile />
+      <Skills /> {/* Añade esta línea */}
     </>
   );
 }
