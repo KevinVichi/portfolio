@@ -1,0 +1,118 @@
+.profile-container {
+  padding: 2rem;
+  margin: 2rem 0;
+  margin-top: 100vh;
+  animation: fadeIn 1s ease-in;
+}
+
+.profile-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-text {
+  width: 80%;
+  min-height: 300px;
+  position: relative;
+  padding: 1.8rem;
+  overflow: visible;
+  box-shadow: 5px 10px 25px 15px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.profile-image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card-details {
+  width: 90%;
+  border-radius: 20px;
+  background: transparent;
+  position: relative;
+  padding: 1.4rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+
+.card-details:hover {
+  border-color: rgb(174, 0, 255);
+  box-shadow: 0 2px 15px 0 rgb(174, 0, 255);
+}
+
+.text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  margin-bottom: 2rem;
+  width: fit-content;
+  display: inline-block;
+  text-align: center;
+}
+
+.text-title:hover {
+  background-color: rgb(174, 0, 255);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.text-body {
+  color: rgb(255, 255, 255);
+}
+
+.card-button {
+  transform: translate(-50%, 125%);
+  width: 50%;
+  border-radius: 1rem;
+  border: none;
+  background-color: rgb(174, 0, 255);
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+.profile-text:hover {
+  border-color: #008bf8;
+}
+
+.profile-text:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .profile-content {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,5 +1,5 @@
 .content {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -8,15 +8,18 @@
   justify-content: center;
   align-items: center;
   z-index: 1;
+  transform: translateY(-100vh);
 }
 
 .name {
   font-family: "Playfair Display", serif;
-  font-size: 5rem;
+  font-size: clamp(5rem, 8vw, 5rem);
   color: #ffffff;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   animation: fadeIn 2s ease-in;
+  padding: 0 20px;
+  text-align: center;
 }
 
 @keyframes fadeIn {
@@ -27,5 +30,21 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Pantallas medianas */
+@media screen and (max-width: 768px) {
+  .name {
+    font-size: clamp(3rem, 2vw, 4rem);
+    letter-spacing: 0.15em;
+  }
+}
+
+/* Pantallas muy pequeñas */
+@media screen and (max-width: 400px) {
+  .name {
+    font-size: clamp(2rem, 8vw, 3rem);
+    letter-spacing: 0.1em;
   }
 }

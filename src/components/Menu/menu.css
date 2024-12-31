@@ -1,8 +1,9 @@
 .menu-container {
-  position: fixed;
-  top: 70px;
+  position: absolute; /* Cambiado de fixed a absolute */
   left: 70px;
+  top: 20px; /* Añadido para control preciso de la posición */
   z-index: 100;
+  transform: translateY(-92vh);
 }
 
 .menu-list {
@@ -20,6 +21,10 @@
   padding: 8px;
   transition: 0.5s;
   z-index: var(--i);
+}
+
+.menu-link:active {
+  transform: scale(0.95);
 }
 
 .menu-item:hover {
@@ -67,10 +72,27 @@
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  transition: 0.5s;
   font-size: 0.8em;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .menu-item:hover .menu-link {
   color: #ddd;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-container {
+    left: 70px;
+    top: 10px;
+  }
 }
