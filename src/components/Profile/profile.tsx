@@ -2,7 +2,7 @@ import "./profile.css";
 
 const Profile = () => {
   return (
-    <section className="profile-container">
+    <section id="profile" className="profile-container">
       <div className="profile-content">
         <div className="profile-image">
           <img src="/adolf2.png" alt="Foto de perfil" />

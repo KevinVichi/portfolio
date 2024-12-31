@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 const SocialLinks = () => {
   return (
-    <section className="social-section">
+    <section id="social" className="social-section">
       <div className="social-container">
         <h2 className="social-title">Mis Redes</h2>
 

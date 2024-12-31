@@ -34,7 +34,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="projects-section">
+    <section id="projects" className="projects-section">
       <h2 className="projects-title">Mis Proyectos</h2>
       <div className="projects-container">
         {projects.map((project, index) => (
