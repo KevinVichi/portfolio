@@ -1,8 +1,9 @@
 .menu-container {
-  position: absolute;
-  top: 70px;
+  position: absolute; /* Cambiado de fixed a absolute */
   left: 70px;
+  top: 20px; /* Añadido para control preciso de la posición */
   z-index: 100;
+  transform: translateY(-92vh);
 }
 
 .menu-list {
@@ -73,4 +74,11 @@
 
 .menu-item:hover .menu-link {
   color: #ddd;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-container {
+    left: 70px;
+    top: 10px;
+  }
 }
