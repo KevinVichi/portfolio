@@ -4,8 +4,10 @@ import Music from "./components/Music/music";
 import Menu from "./components/Menu/menu";
 import Name from "./components/Name/name";
 import Profile from "./components/Profile/profile";
-import Skills from "./components/Skills/skills"; // Añade esta línea
+import Skills from "./components/Skills/skills";
 import Projects from "./components/Projects/project";
+import Contact from "./components/Contact/contact";
+import Social from "./components/Social/social";
 
 function App() {
   return (
@@ -15,8 +17,10 @@ function App() {
       <Music />
       <Name />
       <Profile />
-      <Skills /> {/* Añade esta línea */}
+      <Skills />
       <Projects />
+      <Contact />
+      <Social />
     </>
   );
 }
