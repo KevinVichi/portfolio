@@ -8,14 +8,14 @@
 .profile-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .profile-text {
-  width: 100%;
+  width: 80%;
   min-height: 300px;
   position: relative;
   padding: 1.8rem;
@@ -25,6 +25,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.profile-image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
 .card-details {
