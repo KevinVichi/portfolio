@@ -18,7 +18,7 @@ const Menu = () => {
   return (
     <div className="menu-container">
       <ul className="menu-list">
-        <li className="menu-item" style={{ "--i": 6 } as React.CSSProperties}>
+        <li className="menu-item" style={{ "--i": 7 } as React.CSSProperties}>
           <a
             onClick={(e) => scrollToSection(e, "#name")}
             href="#name"
@@ -27,7 +27,7 @@ const Menu = () => {
             Inicio
           </a>
         </li>
-        <li className="menu-item" style={{ "--i": 5 } as React.CSSProperties}>
+        <li className="menu-item" style={{ "--i": 6 } as React.CSSProperties}>
           <a
             onClick={(e) => scrollToSection(e, "#profile")}
             href="#profile"
@@ -36,7 +36,7 @@ const Menu = () => {
             Objetivo
           </a>
         </li>
-        <li className="menu-item" style={{ "--i": 4 } as React.CSSProperties}>
+        <li className="menu-item" style={{ "--i": 5 } as React.CSSProperties}>
           <a
             onClick={(e) => scrollToSection(e, "#skills")}
             href="#skills"
@@ -45,13 +45,22 @@ const Menu = () => {
             Habilidades
           </a>
         </li>
-        <li className="menu-item" style={{ "--i": 3 } as React.CSSProperties}>
+        <li className="menu-item" style={{ "--i": 4 } as React.CSSProperties}>
           <a
             onClick={(e) => scrollToSection(e, "#projects")}
             href="#projects"
             className="menu-link"
           >
             Proyectos
+          </a>
+        </li>
+        <li className="menu-item" style={{ "--i": 3 } as React.CSSProperties}>
+          <a
+            onClick={(e) => scrollToSection(e, "#hobbies")}
+            href="#hobbies"
+            className="menu-link"
+          >
+            Hobbies
           </a>
         </li>
         <li className="menu-item" style={{ "--i": 2 } as React.CSSProperties}>

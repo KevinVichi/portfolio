@@ -4,6 +4,7 @@ const Name = () => {
   return (
     <div id="name" className="content">
       <h1 className="name">KEVIN VICHICELA</h1>
+      <h2 className="profession">Desarrollador Frontend</h2>
     </div>
   );
 };

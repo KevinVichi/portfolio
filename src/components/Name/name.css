@@ -9,6 +9,18 @@
   align-items: center;
   z-index: 1;
   transform: translateY(-100vh);
+  flex-direction: column;
+}
+
+.profession {
+  font-family: "Poppins", serif;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  animation-delay: 3s;
 }
 
 .name {
@@ -24,7 +36,6 @@
   overflow: hidden;
   animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
   width: fit-content;
-  margin: auto;
   max-width: 90vw;
 }
 
@@ -76,5 +87,17 @@
   .name {
     font-size: clamp(1.5rem, 4vw, 2.5rem);
     letter-spacing: 0.08em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profession {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profession {
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
   }
 }
