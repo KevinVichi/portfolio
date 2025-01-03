@@ -1,6 +1,8 @@
 import "./skills.css";
+import { useInView } from "../../Hook/hook";
 
 const Skills = () => {
+  const { ref, isInView } = useInView();
   const skillCategories = [
     {
       category: "Lenguajes",
@@ -89,7 +91,11 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="skills-section">
+    <section
+      ref={ref}
+      id="skills"
+      className={`skills-section ${isInView ? "show" : ""}`}
+    >
       {skillCategories.map((category, categoryIndex) => (
         <div key={categoryIndex} className="skill-category">
           <h2 className="category-title">{category.category}</h2>

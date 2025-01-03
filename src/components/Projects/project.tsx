@@ -1,6 +1,8 @@
 import "./project.css";
+import { useInView } from "../../Hook/hook";
 
 const Projects = () => {
+  const { ref, isInView } = useInView();
   const projects = [
     {
       title: "🔩 Tuerca Dorada",
@@ -56,9 +58,13 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="projects-section">
-      <h2 className="projects-title">Mis Proyectos</h2>
+    <section
+      ref={ref}
+      id="projects"
+      className={`projects-section ${isInView ? "show" : ""}`}
+    >
       <div className="projects-container">
+        <h2 className="projects-title">Mis Proyectos</h2>
         {projects.map((project, index) => (
           <div className="card" key={index}>
             <img
@@ -77,6 +83,9 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
+              <br></br>
+              <br></br>
+              <br></br>
               <a
                 href={project.github}
                 className="github-link"

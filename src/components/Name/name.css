@@ -23,6 +23,9 @@
   white-space: nowrap;
   overflow: hidden;
   animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+  width: fit-content;
+  margin: auto;
+  max-width: 90vw;
 }
 
 @keyframes typing {

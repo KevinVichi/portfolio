@@ -1,9 +1,16 @@
 import "./social.css";
 import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { useInView } from "../../Hook/hook";
 
 const SocialLinks = () => {
+  const { ref, isInView } = useInView();
+
   return (
-    <section id="social" className="social-section">
+    <section
+      ref={ref}
+      id="social"
+      className={`social-section ${isInView ? "show" : ""}`}
+    >
       <div className="social-container">
         <h2 className="social-title">Mis Redes</h2>
 

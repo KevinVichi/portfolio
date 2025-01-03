@@ -3,6 +3,14 @@
   text-align: center;
   max-width: 1400px;
   margin: 0 auto;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skills-section.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .skill-category {
@@ -11,6 +19,23 @@
   padding: 2rem;
   border-radius: 15px;
   backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+}
+
+.skills-section.show .skill-category {
+  animation: fadeIn 0.5s ease-in forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .category-title {

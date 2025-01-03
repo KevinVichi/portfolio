@@ -3,6 +3,18 @@
   text-align: center;
   max-width: 1400px;
   margin: 0 auto;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-container.show {
+  animation: none;
 }
 
 .contact-container {

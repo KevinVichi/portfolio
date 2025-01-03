@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./contact.css";
+import { useInView } from "../../Hook/hook";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +9,8 @@ const Contact = () => {
     message: "",
   });
 
+  const { ref, isInView } = useInView();
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Aquí iría la lógica de envío
@@ -15,7 +18,11 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact-section">
+    <section
+      ref={ref}
+      id="contact"
+      className={`contact-section ${isInView ? "show" : ""}`}
+    >
       <div className="contact-container">
         <h2 className="contact-title">Contáctame</h2>
         <div className="contact-content">
