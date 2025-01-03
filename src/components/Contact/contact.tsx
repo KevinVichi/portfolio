@@ -13,8 +13,29 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Aquí iría la lógica de envío
-    console.log(formData);
+
+    // Validación básica
+    if (!formData.name || !formData.email || !formData.message) {
+      alert("Por favor, completa todos los campos");
+      return;
+    }
+
+    // Formatear el contenido del email
+    const mailtoLink = `mailto:kvichicela8375@uta.edu.ec?subject=Mensaje de ${formData.name}&body=Nombre: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0AMensaje:%0D%0A${formData.message}`;
+
+    try {
+      window.location.href = mailtoLink;
+      // Limpiar el formulario después de enviar
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      alert(
+        "Hubo un error al intentar enviar el mensaje. Por favor, inténtalo de nuevo."
+      );
+    }
   };
 
   return (

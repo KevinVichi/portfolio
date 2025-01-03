@@ -49,7 +49,7 @@ const Projects = () => {
     },
     {
       title: "VichiTec",
-      category: "Aplicacion movil para la compra y venta de productos",
+      category: "Aplicacion de compra y venta",
       image: "/VichiTec.png",
       github: "https://github.com/KevinVichi/VichiTec",
       technologies: ["Angular", "Firebase", "TypeScript "],
@@ -83,8 +83,6 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
-              <br></br>
-              <br></br>
               <br></br>
               <a
                 href={project.github}
