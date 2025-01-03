@@ -1,42 +1,70 @@
 import "./project.css";
+import { useInView } from "../../Hook/hook";
 
 const Projects = () => {
+  const { ref, isInView } = useInView();
   const projects = [
     {
-      title: "Proyecto 1",
-      category: "Ecommerce para el Ituti",
-      image: "/eje.jpeg",
-      github: "https://github.com/username/repo1",
-      technologies: ["React", "TypeScript", "Tailwind"],
+      title: "🔩 Tuerca Dorada",
+      category: "Tienda Online con diseño intuitivo",
+      image: "/TuercaDorada.png",
+      github: "https://github.com/KevinVichi/TuercaDorada",
+      technologies: ["Php", "HTML", "Bootstrap"],
     },
     {
-      title: "Proyecto 2",
-      category: "Web Development",
-      image: "/eje.jpeg",
-      github: "https://github.com/username/repo1",
-      technologies: ["React", "TypeScript", "Tailwind"],
+      title: "ITuti Shop",
+      category: "Tienda Online para la industria Ituti",
+      image: "/ITutiShop.png",
+      github: "https://github.com/davidf110102/ITutiShop",
+      technologies: ["Php", "HTML", "Bootstrap"],
     },
     {
-      title: "Proyecto 3",
-      category: "Web Development",
-      image: "/eje.jpeg",
-      github: "https://github.com/username/repo1",
-      technologies: ["React", "TypeScript", "Tailwind"],
+      title: "Sistema QR",
+      category: "Sistema de quejas y reclamos",
+      image: "/SistemaQR.png",
+      github: "https://github.com/KevinVichi/SistemaQuejaReclamo",
+      technologies: ["Angular", "Node", "Firebase"],
     },
     {
-      title: "Proyecto 4",
-      category: "Web Development",
-      image: "/eje.jpeg",
-      github: "https://github.com/username/repo1",
-      technologies: ["React", "TypeScript", "Tailwind"],
+      title: "KDinner",
+      category: "App de recetas de cocina",
+      image: "/appReceta.png",
+      github: "https://github.com/KevinVichi/AppRecetas",
+      technologies: ["Angular", "Node", "MySQL"],
+    },
+    {
+      title: "Portafolio",
+      category: "Portafolio profesional",
+      image: "/portafolio.png",
+      github: "https://github.com/KevinVichi/portfolio",
+      technologies: ["React", "Node", "TypeScript"],
+    },
+    {
+      title: "BusTrack",
+      category: "Pagina web para compra venta de boletos",
+      image: "/BusTrack.png",
+      github:
+        "https://github.com/ArielTonato/app-buses-front-web/tree/feature/CompraBoletos",
+      technologies: ["Angular", "PrimeNG", "Vite"],
+    },
+    {
+      title: "VichiTec",
+      category: "Aplicacion de compra y venta",
+      image: "/VichiTec.png",
+      github: "https://github.com/KevinVichi/VichiTec",
+      technologies: ["Angular", "Firebase", "TypeScript "],
     },
     // ...más proyectos
   ];
 
   return (
-    <section id="projects" className="projects-section">
-      <h2 className="projects-title">Mis Proyectos</h2>
+    <section
+      ref={ref}
+      id="projects"
+      className={`projects-section ${isInView ? "show" : ""}`}
+    >
       <div className="projects-container">
+        <h2 className="projects-title">Mis Proyectos</h2>
         {projects.map((project, index) => (
           <div className="card" key={index}>
             <img
@@ -55,6 +83,7 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
+              <br></br>
               <a
                 href={project.github}
                 className="github-link"

@@ -12,14 +12,39 @@
 }
 
 .name {
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins-extrabold", serif;
   font-size: clamp(5rem, 8vw, 5rem);
   color: #ffffff;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   letter-spacing: 0.1em;
-  animation: fadeIn 2s ease-in;
   padding: 0 20px;
   text-align: center;
+  border-right: 4px solid #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+  width: fit-content;
+  margin: auto;
+  max-width: 90vw;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(174, 0, 255);
+  }
 }
 
 @keyframes fadeIn {
@@ -33,18 +58,23 @@
   }
 }
 
-/* Pantallas medianas */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .name {
-    font-size: clamp(3rem, 2vw, 4rem);
+    font-size: clamp(2.5rem, 6vw, 4rem);
     letter-spacing: 0.15em;
   }
 }
 
-/* Pantallas muy pequeñas */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
   .name {
-    font-size: clamp(2rem, 8vw, 3rem);
+    font-size: clamp(2rem, 5vw, 3rem);
     letter-spacing: 0.1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .name {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    letter-spacing: 0.08em;
   }
 }

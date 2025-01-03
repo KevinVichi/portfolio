@@ -1,11 +1,17 @@
 import "./profile.css";
+import { useInView } from "../../Hook/hook";
 
 const Profile = () => {
+  const { ref, isInView } = useInView();
   return (
-    <section id="profile" className="profile-container">
+    <section
+      ref={ref}
+      id="profile"
+      className={`profile-container ${isInView ? "show" : ""}`}
+    >
       <div className="profile-content">
         <div className="profile-image">
-          <img src="/adolf2.png" alt="Foto de perfil" />
+          <img src="/foto3.png" alt="Foto de perfil" />
         </div>
         <div className="profile-text">
           <h2 className="text-title">Objetivo Profesional</h2>

@@ -1,6 +1,8 @@
 import "./skills.css";
+import { useInView } from "../../Hook/hook";
 
 const Skills = () => {
+  const { ref, isInView } = useInView();
   const skillCategories = [
     {
       category: "Lenguajes",
@@ -89,20 +91,31 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="skills-section">
-      {skillCategories.map((category, categoryIndex) => (
-        <div key={categoryIndex} className="skill-category">
-          <h2 className="category-title">{category.category}</h2>
-          <div className="skills-container">
-            {category.skills.map((skill, skillIndex) => (
-              <div className="skill-item" key={skillIndex}>
-                <img src={skill.icon} alt={skill.name} className="skill-icon" />
-                <span className="skill-name">{skill.name}</span>
-              </div>
-            ))}
+    <section
+      ref={ref}
+      id="skills"
+      className={`skills-section ${isInView ? "show" : ""}`}
+    >
+      <div className="skills-container">
+        <h2 className="skills-title">Habilidades</h2>
+        {skillCategories.map((category, categoryIndex) => (
+          <div key={categoryIndex} className="category-group">
+            <h3 className="category-title">{category.category}</h3>
+            <div className="skills-grid">
+              {category.skills.map((skill, skillIndex) => (
+                <div className="skill-item" key={skillIndex}>
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    className="skill-icon"
+                  />
+                  <span className="skill-name">{skill.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
 };
