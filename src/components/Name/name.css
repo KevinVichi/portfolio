@@ -12,7 +12,7 @@
 }
 
 .name {
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins-extrabold", serif;
   font-size: clamp(5rem, 8vw, 5rem);
   color: #ffffff;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);

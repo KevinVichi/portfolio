@@ -5,7 +5,7 @@ const Profile = () => {
     <section id="profile" className="profile-container">
       <div className="profile-content">
         <div className="profile-image">
-          <img src="/adolf2.png" alt="Foto de perfil" />
+          <img src="/foto3.png" alt="Foto de perfil" />
         </div>
         <div className="profile-text">
           <h2 className="text-title">Objetivo Profesional</h2>

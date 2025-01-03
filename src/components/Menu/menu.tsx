@@ -24,7 +24,7 @@ const Menu = () => {
             href="#name"
             className="menu-link"
           >
-            Name
+            Inicio
           </a>
         </li>
         <li className="menu-item" style={{ "--i": 5 } as React.CSSProperties}>
@@ -33,7 +33,7 @@ const Menu = () => {
             href="#profile"
             className="menu-link"
           >
-            Object
+            Objetivo
           </a>
         </li>
         <li className="menu-item" style={{ "--i": 4 } as React.CSSProperties}>
@@ -42,7 +42,7 @@ const Menu = () => {
             href="#skills"
             className="menu-link"
           >
-            Skills
+            Habilidades
           </a>
         </li>
         <li className="menu-item" style={{ "--i": 3 } as React.CSSProperties}>
@@ -51,7 +51,7 @@ const Menu = () => {
             href="#projects"
             className="menu-link"
           >
-            Projects
+            Proyectos
           </a>
         </li>
         <li className="menu-item" style={{ "--i": 2 } as React.CSSProperties}>
@@ -60,7 +60,7 @@ const Menu = () => {
             href="#contact"
             className="menu-link"
           >
-            Contact
+            Contacto
           </a>
         </li>
         <li className="menu-item" style={{ "--i": 1 } as React.CSSProperties}>
@@ -69,7 +69,7 @@ const Menu = () => {
             href="#social"
             className="menu-link"
           >
-            Social
+            Red Social
           </a>
         </li>
       </ul>
