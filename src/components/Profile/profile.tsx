@@ -17,11 +17,10 @@ const Profile = () => {
           <h2 className="text-title">Objetivo Profesional</h2>
           <div className="card-details">
             <p className="text-body">
-              Como Ingeniero en Software, busco desarrollar soluciones
-              innovadoras y escalables que impacten positivamente en la
-              sociedad. Mi objetivo es crecer profesionalmente en un ambiente
-              dinámico donde pueda aplicar mis conocimientos en desarrollo web y
-              nuevas tecnologías.
+              Crear experiencias web únicas, accesibles y visualmente
+              impactantes, combinando creatividad y tecnología para resolver
+              problemas reales y conectar con las personas a través de
+              interfaces intuitivas y funcionales.
             </p>
           </div>
         </div>
