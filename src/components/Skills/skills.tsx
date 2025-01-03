@@ -96,19 +96,26 @@ const Skills = () => {
       id="skills"
       className={`skills-section ${isInView ? "show" : ""}`}
     >
-      {skillCategories.map((category, categoryIndex) => (
-        <div key={categoryIndex} className="skill-category">
-          <h2 className="category-title">{category.category}</h2>
-          <div className="skills-container">
-            {category.skills.map((skill, skillIndex) => (
-              <div className="skill-item" key={skillIndex}>
-                <img src={skill.icon} alt={skill.name} className="skill-icon" />
-                <span className="skill-name">{skill.name}</span>
-              </div>
-            ))}
+      <div className="skills-container">
+        <h2 className="skills-title">Habilidades</h2>
+        {skillCategories.map((category, categoryIndex) => (
+          <div key={categoryIndex} className="category-group">
+            <h3 className="category-title">{category.category}</h3>
+            <div className="skills-grid">
+              {category.skills.map((skill, skillIndex) => (
+                <div className="skill-item" key={skillIndex}>
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    className="skill-icon"
+                  />
+                  <span className="skill-name">{skill.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
 };
