@@ -30,7 +30,7 @@ const SocialLinks = () => {
             </div>
           </a>
           <a
-            href="https://linkedin.com/in/tuUsuario"
+            href="https://www.linkedin.com/in/kevin-daniel-vichicela-casa-6932ab331/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon linkedin"

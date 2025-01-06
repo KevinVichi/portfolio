@@ -8,17 +8,17 @@ const Hobbies = () => {
     {
       name: "Videojuegos",
       icon: "🎮",
-      description: "Disfruto de los juegos de estrategia y RPG",
+      description: "Me apasionan los juegos cooperativos",
     },
     {
       name: "Música",
       icon: "🎵",
-      description: "Me gusta escuchar y tocar guitarra",
+      description: "Me fascina escuchar composiciones de piano y violín",
     },
     {
       name: "Deportes",
       icon: "⚽",
-      description: "Practico fútbol y baloncesto",
+      description: "Disfruto del ciclismo",
     },
   ];
 
