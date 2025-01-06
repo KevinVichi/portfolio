@@ -53,9 +53,17 @@
 }
 
 .hobby-card {
-  padding: 2rem;
+  position: relative;
+  height: clamp(250px, 40vw, 300px);
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  background: rgba(174, 0, 255, 0.1);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.3s ease-in-out;
@@ -81,17 +89,55 @@
 }
 
 .hobby-icon {
-  font-size: 3rem;
+  font-size: 5rem;
   margin-bottom: 1rem;
+  transition: 0.3s ease;
+}
+
+.hobby-card:hover .hobby-icon {
+  filter: blur(5px) brightness(0.3);
+  transform: scale(1.05);
+}
+
+.hobby-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+.hobby-card:hover .hobby-image {
+  filter: blur(5px) brightness(0.3);
+  transform: scale(1.05);
+}
+
+/* Remover estilos anteriores de .hobby-icon */
+
+.hobby-textBox {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(0.5rem, 2vw, 1rem);
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.hobby-card:hover .hobby-textBox {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .hobby-name {
-  color: #ffffff;
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2vw, 2rem);
   margin-bottom: 1rem;
 }
 
 .hobby-description {
-  color: #ffffff;
-  font-size: 1rem;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  text-align: center;
 }

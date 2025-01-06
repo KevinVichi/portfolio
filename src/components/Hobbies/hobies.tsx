@@ -6,18 +6,18 @@ const Hobbies = () => {
 
   const hobbies = [
     {
-      name: "Videojuegos",
-      icon: "🎮",
+      name: "Videojuegos 🎮",
+      image: "/juegoCooperativo.jpg", // Añadir imagen relacionada con gaming
       description: "Me apasionan los juegos cooperativos",
     },
     {
-      name: "Música",
-      icon: "🎵",
+      name: "Música 🎵",
+      image: "/piano2.jpg", // Añadir imagen de piano y violín
       description: "Me fascina escuchar composiciones de piano y violín",
     },
     {
-      name: "Deportes",
-      icon: "⚽",
+      name: "Deportes 🚲",
+      image: "/ciclismo.jpg", // Añadir imagen de ciclismo
       description: "Disfruto del ciclismo",
     },
   ];
@@ -32,9 +32,11 @@ const Hobbies = () => {
       <div className="hobbies-container">
         {hobbies.map((hobby, index) => (
           <div key={index} className="hobby-card">
-            <span className="hobby-icon">{hobby.icon}</span>
-            <h3 className="hobby-name">{hobby.name}</h3>
-            <p className="hobby-description">{hobby.description}</p>
+            <img src={hobby.image} alt={hobby.name} className="hobby-image" />
+            <div className="hobby-textBox">
+              <h3 className="hobby-name">{hobby.name}</h3>
+              <p className="hobby-description">{hobby.description}</p>
+            </div>
           </div>
         ))}
       </div>
