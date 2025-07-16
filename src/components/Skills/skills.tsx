@@ -65,6 +65,10 @@ const Skills = () => {
           name: "Angular",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
         },
+        {
+          name: "Next",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+        },
       ],
     },
     {

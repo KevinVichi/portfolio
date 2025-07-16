@@ -54,6 +54,13 @@ const Projects = () => {
       github: "https://github.com/KevinVichi/VichiTec",
       technologies: ["Angular", "Firebase", "TypeScript "],
     },
+    {
+      title: "RepoSeguro",
+      category: "Respositorio con cifrado de pdfs",
+      image: "/RepoSeguro.png",
+      github: "https://github.com/KevinVichi/VichiTec",
+      technologies: ["Next", "MySQL Server", "TypeScript "],
+    },
     // ...más proyectos
   ];
 

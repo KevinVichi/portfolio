@@ -31,7 +31,7 @@ const Contact = () => {
         email: "",
         message: "",
       });
-    } catch (error) {
+    } catch {
       alert(
         "Hubo un error al intentar enviar el mensaje. Por favor, inténtalo de nuevo."
       );

@@ -9,6 +9,7 @@ import Projects from "./components/Projects/project";
 import Contact from "./components/Contact/contact";
 import Social from "./components/Social/social";
 import Hobbies from "./components/Hobbies/hobies";
+import Education from "./components/Education/education";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Skills />
       <Projects />
       <Hobbies />
+      <Education />
       <Contact />
       <Social />
     </>
