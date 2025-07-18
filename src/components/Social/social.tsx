@@ -20,6 +20,7 @@ const SocialLinks = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon github"
+            aria-label="GitHub de Kevin Vichicela"
           >
             <div className="light-holder">
               <div className="dot"></div>
@@ -34,6 +35,7 @@ const SocialLinks = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon linkedin"
+            aria-label="Linkedin de Kevin Vichicela"
           >
             <div className="light-holder">
               <div className="dot"></div>
@@ -48,6 +50,7 @@ const SocialLinks = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon whatsapp"
+            aria-label="Whatsapp de Kevin Vichicela"
           >
             <div className="light-holder">
               <div className="dot"></div>
@@ -62,6 +65,7 @@ const SocialLinks = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon email"
+            aria-label="Correo de Kevin Vichicela"
           >
             <div className="light-holder">
               <div className="dot"></div>

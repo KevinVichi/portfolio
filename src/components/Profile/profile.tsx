@@ -11,7 +11,7 @@ const Profile = () => {
     >
       <div className="profile-content">
         <div className="profile-image">
-          <img src="/foto3.png" alt="Foto de perfil" />
+          <img src="/foto4.webp" alt="Foto de perfil" width={500} height={400}/>
         </div>
         <div className="profile-text">
           <h2 className="text-title">Objetivo Profesional</h2>

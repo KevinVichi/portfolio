@@ -7,14 +7,14 @@ const Projects = () => {
     {
       title: "🔩 Tuerca Dorada",
       category: "Tienda Online con diseño intuitivo",
-      image: "/TuercaDorada.png",
+      image: "/TuercaDorada.webp",
       github: "https://github.com/KevinVichi/TuercaDorada",
       technologies: ["Php", "HTML", "Bootstrap"],
     },
     {
       title: "ITuti Shop",
       category: "Tienda Online para la industria Ituti",
-      image: "/ITutiShop.png",
+      image: "/ITutiShop.webp",
       github: "https://github.com/davidf110102/ITutiShop",
       technologies: ["Php", "HTML", "Bootstrap"],
     },
@@ -28,14 +28,14 @@ const Projects = () => {
     {
       title: "KDinner",
       category: "App de recetas de cocina",
-      image: "/appReceta.png",
+      image: "/appReceta.webp",
       github: "https://github.com/KevinVichi/AppRecetas",
       technologies: ["Angular", "Node", "MySQL"],
     },
     {
       title: "Portafolio",
       category: "Portafolio profesional",
-      image: "/portafolio.png",
+      image: "/portafolio.webp",
       github: "https://github.com/KevinVichi/portfolio",
       technologies: ["React", "Node", "TypeScript"],
     },

@@ -83,7 +83,7 @@ const Education = () => {
       <div className="hobbies-container">
         {educations.map((edu, index) => (
           <div key={index} className="hobby-card">
-            <img src={edu.image} alt={edu.name} className="hobby-image" />
+            <img src={edu.image} alt={edu.name} className="hobby-image" width={300} height={200} />
             <div className="hobby-textBox">
               <h3 className="hobby-name">{edu.name}</h3>
               <p className="hobby-description">{edu.description}</p>
