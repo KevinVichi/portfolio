@@ -7,7 +7,7 @@ const Music = () => {
 
   useEffect(() => {
     try {
-      const audio = new Audio("/lovely.mp3");
+      const audio = new Audio("/lovely2.mp3");
       audio.onended = () => {
         audio.currentTime = 0;
         audio.play();
