@@ -3,12 +3,6 @@ import "./education.css";
 
 const educations = [
   {
-    name: "Título Bachiller",
-    image: "/bachiller.jpg",
-    description: "INSTALACIONES, EQUIPOS Y MÁQUINAS ELÉCTRICAS",
-    pdf: "/bachiller.pdf",
-  },
-  {
     name: "Google Activate",
     image: "/google.jpeg",
     description: "Competencias digitales para profesionales",
